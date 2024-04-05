@@ -15,4 +15,4 @@ CREATE TABLE
     sales_cost INTEGER,
     sales_dt DATE )
 PARTITION BY
-  sales_dt OPTIONS (require_partition_filter = TRUE);
+  sales_dt OPTIONS (require_partition_filter = TRUE)
