@@ -3,6 +3,7 @@
   "assertionSchema": "dataform_assertions",
   "defaultLocation": "us-central1",
   "warehouse": "bigquery",
+  "defaultDatabase": "pso-amex-data-platform",
   "vars": {
     "connection_name": "pso-amex-data-platform-sample-connection",
     "dataset_id_landing": "landing_sample_dataset",
