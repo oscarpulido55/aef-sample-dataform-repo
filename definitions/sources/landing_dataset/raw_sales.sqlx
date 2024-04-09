@@ -20,7 +20,7 @@ CREATE OR REPLACE EXTERNAL TABLE
 WITH PARTITION COLUMNS ( sates_dt STRING,
     )
 WITH CONNECTION `${dataform.projectConfig.vars.connection_name}` OPTIONS( hive_partition_uri_prefix = "gs://${dataform.projectConfig.vars.sample_data_bucket}/sales",
-    uris = ['gs://${dataform.projectConfig.vars.sample_data_bucket}/sales/*'],
+    uris = ['gs://${dataform.projectConfig.vars.sample_data_bucket}/sales/2024-03-11/'],
     max_staleness = INTERVAL 8 HOUR,
     metadata_cache_mode = 'AUTOMATIC',
     format = 'CSV' )
