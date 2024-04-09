@@ -5,7 +5,7 @@
   "warehouse": "bigquery",
   "defaultDatabase": "pso-amex-data-platform",
   "vars": {
-    "connection_name": "pso-amex-data-platform-sample-connection",
+    "connection_name": "projects/pso-amex-data-platform/locations/us-central1/connections/sample-connection",
     "dataset_id_landing": "landing_sample_dataset",
     "dataset_projectid_landing": "pso-amex-data-platform",
     "dataset_location_landing": "us-central1",
@@ -18,6 +18,6 @@
     "dataset_projectid_exposure": "pso-amex-data-platform",
     "dataset_location_exposure": "us-central1",
     "dataset_description_exposure": "Exposure dataset description",
-    "sample_data_bucket": ""
+    "sample_data_bucket": "my-sample-data-bucket"
   }
 }
