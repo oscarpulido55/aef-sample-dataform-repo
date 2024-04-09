@@ -1,7 +1,3 @@
-dataform.projectConfig.run({
-  name: "disable_acceleration",
-  include: "disable_acceleration.sh"
-});
 config {
     hasOutput: true,
     description: "A table for storing sales",
@@ -21,6 +17,9 @@ CREATE OR REPLACE EXTERNAL TABLE
     sales_value INTEGER,
     sales_cost INTEGER,
     )
+    OPTIONS(
+  acceleration_type = 'NONE'
+)
 WITH PARTITION COLUMNS ( dt STRING,
     )
 WITH CONNECTION `${dataform.projectConfig.vars.connection_name}` OPTIONS( hive_partition_uri_prefix = "gs://${dataform.projectConfig.vars.dataset_projectid_landing}-${dataform.projectConfig.vars.sample_data_bucket}/sales",
