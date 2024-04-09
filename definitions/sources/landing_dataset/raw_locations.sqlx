@@ -5,7 +5,7 @@ config {
         location_id: "Location ID as defined in the source system.",
         location_name: "The location name as defined in the source system."
     },
-    "defaultDataset": "landing_sample_dataset"
+    defaultDataset: "landing_sample_dataset"
 }
 
 CREATE EXTERNAL TABLE
