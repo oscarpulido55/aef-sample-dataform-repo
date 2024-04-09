@@ -5,11 +5,13 @@ config {
         location_id: "Location ID as defined in the source system.",
         location_name: "The location name as defined in the source system."
     },
-    schema: "landing_sample_dataset"
+    schema: ${dataform.projectConfig.vars.landing_dataset_dataset_id}
+    database: ${dataform.projectConfig.vars.landing_dataset_project_id}
+    name: locations
 }
 
 CREATE EXTERNAL TABLE
-  `${dataform.projectConfig.vars.landing_dataset_project_id}.${dataform.projectConfig.vars.landing_dataset_dataset_id}.location` ( location_id STRING,
+  locations ( location_id STRING,
     location_name STRING )
 WITH CONNECTION `${dataform.projectConfig.vars.connection_name}` OPTIONS( uris = ['gs://${dataform.projectConfig.vars.sample_data_bucket}/location/*'],
     max_staleness = INTERVAL 8 HOUR,
