@@ -1,5 +1,5 @@
 config {
-    type: "table",
+    hasOutput: true,
     description: "A table for storing locations",
     columns: {
         location_id: "Location ID as defined in the source system.",
