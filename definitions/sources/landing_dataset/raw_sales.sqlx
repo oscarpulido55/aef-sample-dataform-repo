@@ -6,6 +6,12 @@ config {
         sales_value: "The sales value.",
         sales_cost:"The sales cost."
     },
+    actions: [
+        {
+            name: "disable_acceleration",
+            path: "./disable_acceleration.js"
+        }
+    ],
     schema: `${dataform.projectConfig.vars.dataset_id_landing}`,
     database: `${dataform.projectConfig.vars.dataset_projectid_landing}`,
     name: "sales"
@@ -20,7 +26,7 @@ CREATE OR REPLACE EXTERNAL TABLE
 WITH PARTITION COLUMNS ( dt STRING,
     )
 WITH CONNECTION `${dataform.projectConfig.vars.connection_name}` OPTIONS( hive_partition_uri_prefix = "gs://${dataform.projectConfig.vars.dataset_projectid_landing}-${dataform.projectConfig.vars.sample_data_bucket}/sales",
-    uris = ['gs://${dataform.projectConfig.vars.dataset_projectid_landing}-${dataform.projectConfig.vars.sample_data_bucket}/sales/dt=2024-03-11/sales_dt1.csv','gs://${dataform.projectConfig.vars.dataset_projectid_landing}-${dataform.projectConfig.vars.sample_data_bucket}/sales/dt=2024-03-12/sales_dt2.csv'],
+    uris = ['gs://${dataform.projectConfig.vars.dataset_projectid_landing}-${dataform.projectConfig.vars.sample_data_bucket}/sales/dt=*'],
     max_staleness = INTERVAL 8 HOUR,
     metadata_cache_mode = 'AUTOMATIC',
     format = 'CSV' )
