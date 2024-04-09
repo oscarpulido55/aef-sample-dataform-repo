@@ -16,9 +16,13 @@ CREATE OR REPLACE EXTERNAL TABLE
     product_id STRING,
     sales_value INTEGER,
     sales_cost INTEGER)
-WITH PARTITION COLUMNS (dt STRING)
-WITH CONNECTION `${dataform.projectConfig.vars.connection_name}` OPTIONS( hive_partition_uri_prefix = "gs://${dataform.projectConfig.vars.dataset_projectid_landing}-${dataform.projectConfig.vars.sample_data_bucket}/sales/",
+
+--WITH PARTITION COLUMNS (dt STRING)
+--hive_partition_uri_prefix = "gs://${dataform.projectConfig.vars.dataset_projectid_landing}-${dataform.projectConfig.vars.sample_data_bucket}/sales/",
+--Updating hive partition options with query acceleration is not supported.
+
+WITH CONNECTION `${dataform.projectConfig.vars.connection_name}` OPTIONS(
     uris = ['gs://${dataform.projectConfig.vars.dataset_projectid_landing}-${dataform.projectConfig.vars.sample_data_bucket}/sales/dt=*'],
     max_staleness = INTERVAL 8 HOUR,
-    metadata_cache_mode = 'MANUAL',
+    metadata_cache_mode = 'AUTOMATIC',
     format = 'CSV' )
