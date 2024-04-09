@@ -5,9 +5,8 @@ config {
         location_id: "Location ID as defined in the source system.",
         location_name: "The location name as defined in the source system."
     },
-    schema: `${dataform.projectConfig.vars.landing_dataset_dataset_id}`
-    database: `${dataform.projectConfig.vars.landing_dataset_project_id}`
-    name: locations
+    schema: `${dataform.projectConfig.vars.landing_dataset_dataset_id}
+    name: locationsname
 }
 
 CREATE EXTERNAL TABLE
