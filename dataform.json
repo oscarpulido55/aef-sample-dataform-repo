@@ -2,6 +2,7 @@
   "defaultSchema": "dataform",
   "assertionSchema": "dataform_assertions",
   "defaultLocation": "us-central1",
+  "defaultDataset": "landing_sample_dataset",
   "warehouse": "bigquery",
   "defaultDatabase": "pso-amex-data-platform",
   "vars": {
