@@ -14,10 +14,6 @@
     "dataset_projectid_curated": "pso-amex-data-platform",
     "dataset_location_curated": "us-central1",
     "dataset_description_curated": "curated dataset description",
-    "dataset_id_exposure": "exposure_sample_dataset",
-    "dataset_projectid_exposure": "pso-amex-data-platform",
-    "dataset_location_exposure": "us-central1",
-    "dataset_description_exposure": "Exposure dataset description",
     "sample_data_bucket": "my-sample-data-bucket"
   }
 }
