@@ -18,6 +18,6 @@
     "dataset_description_curated": "curated dataset description",
     "dataset_lake_curated": "sales-lake",
     "dataset_zone_curated": "curated-zone",
-    "sample_data_bucket": "my-sample-data-bucket"
+    "sample_data_bucket": "pso-amex-data-platform-my-sample-data-bucket"
   }
 }
