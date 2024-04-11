@@ -13,7 +13,7 @@ config {
 CREATE OR REPLACE EXTERNAL TABLE
   `${dataform.projectConfig.vars.dataset_projectid_landing}.${dataform.projectConfig.vars.dataset_id_landing}`.products ( product_id STRING,
     product_name STRING )
-WITH CONNECTION `${dataform.projectConfig.vars.connection_name}` OPTIONS( uris = ['gs://${dataform.projectConfig.vars.dataset_projectid_landing}-${dataform.projectConfig.vars.sample_data_bucket}/products/*'],
+WITH CONNECTION `${dataform.projectConfig.vars.connection_name}` OPTIONS( uris = ['gs://${dataform.projectConfig.vars.sample_data_bucket}/products/*'],
     max_staleness = INTERVAL 8 HOUR,
     metadata_cache_mode = 'AUTOMATIC',
     format = 'CSV' )
