@@ -3,21 +3,21 @@
   "assertionSchema": "dataform_assertions",
   "defaultLocation": "us-central1",
   "warehouse": "bigquery",
-  "defaultDatabase": "pso-amex-data-platform",
+  "defaultDatabase": "pso-amex-data-platform2",
   "vars": {
-    "connection_name": "projects/pso-amex-data-platform/locations/us-central1/connections/sample-connection",
+    "connection_name": "projects/pso-amex-data-platform2/locations/us-central1/connections/sample-connection",
     "dataset_id_landing": "landing_sample_dataset",
-    "dataset_projectid_landing": "pso-amex-data-platform",
+    "dataset_projectid_landing": "pso-amex-data-platform2",
     "dataset_location_landing": "us-central1",
     "dataset_description_landing": "Landing dataset description",
     "dataset_lake_landing": "sales-lake",
     "dataset_zone_landing": "landing-zone",
     "dataset_id_curated": "curated_sample_dataset",
-    "dataset_projectid_curated": "pso-amex-data-platform",
+    "dataset_projectid_curated": "pso-amex-data-platform2",
     "dataset_location_curated": "us-central1",
     "dataset_description_curated": "curated dataset description",
     "dataset_lake_curated": "sales-lake",
     "dataset_zone_curated": "curated-zone",
-    "sample_data_bucket": "pso-amex-data-platform-my-sample-data-bucket"
+    "sample_data_bucket": "pso-amex-data-platform2-my-sample-data-bucket"
   }
 }
