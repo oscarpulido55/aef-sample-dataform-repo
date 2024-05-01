@@ -1,4 +1,5 @@
 config {
+    tags: ["ddl"],
     hasOutput: true,
     description: "A table for storing products",
     columns: {
