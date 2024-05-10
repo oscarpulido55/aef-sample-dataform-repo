@@ -1,5 +1,5 @@
 config { tags: ["process"],
-         type: "table"
+         type: "table",
          description: "This table is an example, of a Bigquery Table populated from a BigLake table",
          columns:{
              location_id: "ID of the location",
