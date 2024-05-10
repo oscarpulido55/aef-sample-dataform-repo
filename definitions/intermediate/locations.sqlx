@@ -9,7 +9,7 @@ config { tags: ["process"],
         name: "curated_locations"
       }
 SELECT
-  CAST(location_id AS INTEGER),
+  CAST(location_id AS INTEGER) as location_id,
   location_name
 FROM
    ${ref("locations")}
