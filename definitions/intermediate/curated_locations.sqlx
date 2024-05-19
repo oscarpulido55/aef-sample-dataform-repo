@@ -1,0 +1,15 @@
+config { tags: ["process"],
+         type: "table",
+         description: "This table is an example, of a Bigquery Table populated from a BigLake table",
+         columns:{
+             location_id: "ID of the location",
+             location_name: "Name of the location"},
+        schema: `${dataform.projectConfig.vars.dataset_id_curated}`,
+        database: `${dataform.projectConfig.vars.dataset_projectid_curated}`,
+        name: "curated_locations"
+      }
+SELECT
+  CAST(location_id AS INTEGER) as location_id,
+  location_name
+FROM
+   ${ref("raw_products")}
