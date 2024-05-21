@@ -1,7 +1,7 @@
 config { tags: ["process"],
          type: "table",
           bigquery: {
-            partitionBy: "DATE(dt)",
+            partitionBy: "dt",
             clusterBy: ["location_id"]
           },
          description: "This table is an example, of a Bigquery Table populated from a BigLake table",
@@ -20,6 +20,6 @@ SELECT
   CAST(product_id AS INTEGER) as product_id,
   sales_value,
   sales_cost,
-  dt
+  PARSE_DATE('%Y-%m-%d', dt) AS dt
 FROM
    `${dataform.projectConfig.vars.dataset_projectid_landing}.${dataform.projectConfig.vars.dataset_id_landing}`.raw_sales

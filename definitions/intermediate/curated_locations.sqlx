@@ -12,4 +12,4 @@ SELECT
   CAST(location_id AS INTEGER) as location_id,
   location_name
 FROM
-   ${ref("raw_products")}
+   ${ref("raw_locations")}
