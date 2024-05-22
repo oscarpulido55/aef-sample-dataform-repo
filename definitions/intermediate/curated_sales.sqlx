@@ -1,5 +1,5 @@
-config { tags: ["incremental"],
-         type: "table",
+config { tags: ["process"],
+         type: "incremental",
           bigquery: {
             partitionBy: "dt",
             clusterBy: ["location_id"]
