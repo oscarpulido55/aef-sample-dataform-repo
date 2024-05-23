@@ -19,7 +19,7 @@ SELECT
     p.product_name,
     s.sales_value,
     s.sales_cost,
-    s.sales_revenue,
+    (s.sales_value - s.sales_cost) as sales_revenue,
     s.dt as sales_date
 FROM
    ${ref("curated_sales")} s
