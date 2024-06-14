@@ -11,19 +11,19 @@
     "dataset_location_landing": "us-central1",
     "dataset_description_landing": "Landing dataset description",
     "dataset_lake_landing": "aef-sales-lake",
-    "dataset_zone_landing": "aef-landing-sample-dataset",
+    "dataset_zone_landing": "aef-landing-sample-zone",
     "dataset_id_curated": "aef_curated_sample_dataset",
     "dataset_projectid_curated": "analytics-engg-framework-demo",
     "dataset_location_curated": "us-central1",
     "dataset_description_curated": "curated dataset description",
     "dataset_lake_curated": "aef-sales-lake",
-    "dataset_zone_curated": "aef-curated-sample-dataset",
+    "dataset_zone_curated": "aef-curated-sample-zone",
     "dataset_id_exposure": "aef_exposure_sample_dataset",
     "dataset_projectid_exposure": "analytics-engg-framework-demo",
     "dataset_location_exposure": "us-central1",
     "dataset_description_exposure": "Exposure dataset description",
     "dataset_lake_exposure": "aef-sales-lake",
-    "dataset_zone_exposure": "aef-exposure-sample-dataset",
+    "dataset_zone_exposure": "aef-exposure-sample-zone",
     "sample_data_bucket": "analytics-engg-framework-demo-my-sample-data-bucket"
   }
 }
