@@ -12,7 +12,7 @@
 
 ## Using this Datafrom repository with aef-data-model
 
-- Define datasets in the `dataform.json` variables, if this repository is referenced, this parameters will be read by aef-data-model during terraform apply to create the dasets defined here.
+- Define datasets in the `dataform.json` variables, if this repository is referenced, this parameters will be read by aef-data-model during terraform apply to create the datasets defined here.
 - It should include 3 variables for each dataset with next format:
 ```json lines
 {
