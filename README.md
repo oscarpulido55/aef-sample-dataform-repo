@@ -18,13 +18,13 @@
 {
   "defaultSchema": "default_dataset",
   "assertionSchema": "dataform_assertions",
-  "defaultLocation": "<YOUR-REGION>",
+  "defaultLocation": "<REGION>",
   "warehouse": "bigquery",
-  "defaultDatabase": "<YOUR-PROJECT>",
+  "defaultDatabase": "<PROJECT>",
   "vars": {
-    "dataset_id_<DATASET_IDENTIFIER>":"<YOUR_DATASET_NAME>",
-    "dataset_projectid_<DATASET_IDENTIFIER>":"<YOUR_DATASET_PROJECT>",
-    "dataset_location_<DATASET_IDENTIFIER>":"<YOUR_DATASET_LOCATION>",
+    "dataset_id_<DATASET_IDENTIFIER>":"<DATASET_NAME>",
+    "dataset_projectid_<DATASET_IDENTIFIER>":"DATASET_PROJECT>",
+    "dataset_location_<DATASET_IDENTIFIER>":"<DATASET_LOCATION>",
     ...
   }
 }
